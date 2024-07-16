@@ -1,13 +1,27 @@
+.hero {
+  width: 375px;
+  height: 1000px;
+}
+
 .buttonWrapper {
+  display: flex;
+  justify-content: end;
+  margin: 8px;
 }
 
 .menuButton {
   background-color: #fff;
   padding: 4px 7px;
   border-radius: 3px;
-  color: #DEB887;
+  color: #deb887;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
 
+  color: #deb887;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  position: fixed;
 }
