@@ -1,14 +1,7 @@
-import { Button } from "../Button/index.jsx";
-import { DropDownMenu } from "../DropDownMenu/index.jsx";
 import styles from "./index.module.scss";
 
 function App() {
-  return (
-    <div>
-      <Button />
-      <DropDownMenu />
-    </div>
-  );
+  return;
 }
 
 export default App;
