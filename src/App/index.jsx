@@ -1,7 +1,10 @@
+import { Head } from "../Head";
 import styles from "./index.module.scss";
 
-function App() {
-  return;
-}
-
-export default App;
+export const App = () => {
+  return (
+    <>
+      <Head />
+    </>
+  );
+};
