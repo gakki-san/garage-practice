@@ -1,0 +1,29 @@
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-top: 15px;
+}
+
+.headerLeft,
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.headerInput {
+  border: solid 1px rgba($color: white, $alpha: 0.5);
+  padding: 0 5px;
+}
+
+.headerHamburger {
+  display: flex;
+}
+
+.headerLogoWrapper,
+.headerName,
+.headerRightButtonWrapper,
+.headerRightIconWrapper {
+  margin-left: 15px;
+}
+.svgimage {}
