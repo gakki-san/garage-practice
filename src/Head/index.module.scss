@@ -1,3 +1,7 @@
+.header {
+  background-color: black;
+}
+
 .headerPadding {
   padding: 0 15px;
 }
@@ -5,7 +9,7 @@
 .headerTop {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 .headerLeft,
