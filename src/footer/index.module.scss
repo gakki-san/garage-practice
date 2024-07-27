@@ -1,0 +1,21 @@
+.footer {
+  margin-top: 40px;
+}
+
+.footerPadding {
+  padding: 0 15px;
+}
+.footerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.footerItem {
+  margin-left: 5px;
+}
+
+.footerItem a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
