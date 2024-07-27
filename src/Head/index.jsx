@@ -2,13 +2,15 @@ import { Hamburger } from "../Hamburger";
 import { HeaderNav } from "../HeaderNav";
 import { Sidebar } from "../Sidebar";
 import styles from "./index.module.scss";
+import React, { useState } from "react";
 
 export const Head = () => {
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleOpenSidebar = () => {
+  const toggleSidebar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
     <>
       <div className={styles.header}>
@@ -17,11 +19,14 @@ export const Head = () => {
             <div className={styles.headerLeft}>
               <div className={styles.headerHamburgerWrapper}>
                 <button
-                  onClick={handleOpenSidebar}
+                  onClick={toggleSidebar}
                   className={styles.headerHamburger}>
                   <Hamburger />
                 </button>
-                <Sidebar />
+                <Sidebar
+                  isMenuOpen={isMenuOpen}
+                  toggleSidebar={toggleSidebar}
+                />
               </div>
               <div className={styles.headerLogoWrapper}>
                 <button className={styles.headerLogo}>
