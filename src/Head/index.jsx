@@ -1,16 +1,9 @@
 import { Hamburger } from "../Hamburger";
 import { HeaderNav } from "../HeaderNav";
-import { Sidebar } from "../Sidebar";
 import styles from "./index.module.scss";
-import React, { useState } from "react";
+import React from "react";
 
-export const Head = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
+export const Head = ({ toggleSidebar }) => {
   return (
     <>
       <div className={styles.header}>
@@ -23,10 +16,6 @@ export const Head = () => {
                   className={styles.headerHamburger}>
                   <Hamburger />
                 </button>
-                <Sidebar
-                  isMenuOpen={isMenuOpen}
-                  toggleSidebar={toggleSidebar}
-                />
               </div>
               <div className={styles.headerLogoWrapper}>
                 <button className={styles.headerLogo}>
