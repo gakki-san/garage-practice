@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  padding: 0 20px;
+}
+button {
+  color: white;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburgerMenu {
+  font-size: 32px;
+}
+
+.githubIcon {
+  font-size: 32px;
+}
+
+.githubIconPadding {
+  padding-left: 20px;
+}
+
+.accountName {
+  font-size: 32px;
+  padding-left: 20px;
+}
