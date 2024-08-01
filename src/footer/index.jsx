@@ -9,7 +9,7 @@ export const Footer = () => {
             <div className={styles.footerLogo}>
               <img src="" alt="" />◎
             </div>
-            <div className={styles.footerItem}>◎2024 Github,inc</div>
+            <div className={styles.footerTitle}>2024 Github,inc</div>
             <div className={styles.footerItem}>
               <a href="#">Term</a>
             </div>
@@ -32,6 +32,7 @@ export const Footer = () => {
               <a href="#">Do not share my personal information</a>
             </div>
           </div>
+          <div className={styles.footerSpItem}>◎2024 Github,inc</div>
         </div>
       </div>
     </>

@@ -19,6 +19,7 @@ export const HeaderNav = () => {
             </button>
           ))}
         </div>
+        <div className={styles.headerNavSpButton}>x</div>
       </div>
     </>
   );

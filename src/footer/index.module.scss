@@ -8,14 +8,31 @@
 .footerContainer {
   display: flex;
   justify-content: center;
-}
-
-.footerItem {
-  margin-left: 5px;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .footerItem a {
   color: white;
   text-decoration: none;
   font-size: 12px;
+}
+
+.footerSpItem {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .footerLogo,
+  .footerTitle {
+    display: none;
+  }
+
+  .footerSpItem {
+    display: block;
+  }
+
+  .footerSpItem {
+    text-align: center;
+  }
 }

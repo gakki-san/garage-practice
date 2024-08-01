@@ -71,3 +71,31 @@
   grid-template-columns: 1fr 1fr;
   margin: 15px;
 }
+
+@media (max-width: 600px) {
+  .overviewImageWrapper {
+    width: auto;
+  }
+  .overviewRight {
+    display: none;
+  }
+  .overviewContainer {
+    display: block;
+  }
+  .overviewSpLeft {
+    display: flex;
+    align-items: center;
+  }
+  .overviewImageWrapper::before {
+    display: none;
+  }
+  .overviewImage {
+    max-width: 150px;
+  }
+  .overviewLeftNameWrapper {
+    margin-left: 20px;
+  }
+  .overviewLeftEditButtonWrapper {
+    margin-top: 30px;
+  }
+}

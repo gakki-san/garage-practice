@@ -33,3 +33,13 @@
 .headerRightIconWrapper {
   margin-left: 15px;
 }
+
+@media (max-width: 600px) {
+  .headerInput {
+    display: none;
+  }
+
+  .headerRightButtonWrapper:nth-child(n + 4) {
+    display: none;
+  }
+}
