@@ -13,17 +13,15 @@ export const App = () => {
   };
 
   return (
-    <>
-      <div className={styles.css}>
-        <Header
-          isMenuOpen={isMenuOpen}
-          setIsMenuOpen={setIsMenuOpen}
-          toggleSidebar={toggleSidebar}
-        />
-        <Profile />
-        <Footer />
-        <Sidebar isMenuOpen={isMenuOpen} toggleSidebar={toggleSidebar} />
-      </div>
-    </>
+    <div className={styles.css}>
+      <Header
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        toggleSidebar={toggleSidebar}
+      />
+      <Profile />
+      <Footer />
+      <Sidebar isMenuOpen={isMenuOpen} toggleSidebar={toggleSidebar} />
+    </div>
   );
 };
