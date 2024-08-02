@@ -4,9 +4,9 @@ export const Hamburger = () => {
   return (
     <>
       <div className={styles.hamburger}>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className={styles.hamburgerLine} />
+        <div className={styles.hamburgerLine} />
+        <div className={styles.hamburgerLine} />
       </div>
     </>
   );
