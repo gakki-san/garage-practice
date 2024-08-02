@@ -1,13 +1,13 @@
-.overview {
+.profile {
   background-color: rgb(29, 29, 34);
 }
 
-.overviewPadding {
+.profilePadding {
   padding: 0 20px;
   padding-top: 20px;
 }
 
-.overviewImageWrapper {
+.profileImageWrapper {
   width: 100%;
   border-radius: 50%;
   position: relative;
@@ -15,14 +15,14 @@
   justify-content: center;
 }
 
-.overviewImage {
+.profileImage {
   max-width: 400px;
   border-radius: 50%;
   width: 100%;
   height: auto;
 }
 
-.overviewImageWrapper::before {
+.profileImageWrapper::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -33,22 +33,22 @@
   border-radius: 50%;
 }
 
-.overviewContainer {
+.profileContainer {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
 }
 
-.overviewLeftName {
+.profileLeftName {
   font-size: 24px;
   font-weight: bold;
 }
-.overviewLeftNickName {
+.profileLeftNickName {
   font-size: 20px;
   color: rgb(130, 129, 129);
 }
 
-.overviewLeftEditButton {
+.profileLeftEditButton {
   width: 100%;
   padding: 5px 20px;
   background-color: rgb(83, 83, 83);
@@ -56,16 +56,16 @@
   border-radius: 3px;
 }
 
-.overviewRightTitleWrapper {
+.profileRightTitleWrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.overviewRightText {
+.profileRightText {
   color: blue;
 }
 
-.overviewRightCards {
+.profileRightCards {
   display: grid;
   gap: 15px;
   grid-template-columns: 1fr 1fr;
@@ -73,29 +73,29 @@
 }
 
 @media (max-width: 600px) {
-  .overviewImageWrapper {
+  .profileImageWrapper {
     width: auto;
   }
-  .overviewRight {
+  .profileRight {
     display: none;
   }
-  .overviewContainer {
+  .profileContainer {
     display: block;
   }
-  .overviewSpLeft {
+  .profileSpLeft {
     display: flex;
     align-items: center;
   }
-  .overviewImageWrapper::before {
+  .profileImageWrapper::before {
     display: none;
   }
-  .overviewImage {
+  .profileImage {
     max-width: 150px;
   }
-  .overviewLeftNameWrapper {
+  .profileLeftNameWrapper {
     margin-left: 20px;
   }
-  .overviewLeftEditButtonWrapper {
+  .profileLeftEditButtonWrapper {
     margin-top: 30px;
   }
 }

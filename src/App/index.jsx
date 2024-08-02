@@ -1,5 +1,5 @@
 import { Header } from "../Header";
-import { Overview } from "../Overview";
+import { Profile } from "../Profile";
 import { Sidebar } from "../Sidebar";
 import { Footer } from "../footer";
 import styles from "./index.module.scss";
@@ -19,7 +19,7 @@ export const App = () => {
         setIsMenuOpen={setIsMenuOpen}
         toggleSidebar={toggleSidebar}
       />
-      <Overview />
+      <Profile />
       <Footer />
       <Sidebar isMenuOpen={isMenuOpen} toggleSidebar={toggleSidebar} />
     </>
