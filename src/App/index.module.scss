@@ -1,12 +1,10 @@
-body {
+.css {
   background-color: rgb(29, 29, 34);
-  color: white;
+  min-height: 100vh;
 }
 
-input {
-  color: white;
-}
-
-button {
+.css,
+.css button,
+.css input {
   color: white;
 }

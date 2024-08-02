@@ -14,14 +14,16 @@ export const App = () => {
 
   return (
     <>
-      <Header
-        isMenuOpen={isMenuOpen}
-        setIsMenuOpen={setIsMenuOpen}
-        toggleSidebar={toggleSidebar}
-      />
-      <Profile />
-      <Footer />
-      <Sidebar isMenuOpen={isMenuOpen} toggleSidebar={toggleSidebar} />
+      <div className={styles.css}>
+        <Header
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          toggleSidebar={toggleSidebar}
+        />
+        <Profile />
+        <Footer />
+        <Sidebar isMenuOpen={isMenuOpen} toggleSidebar={toggleSidebar} />
+      </div>
     </>
   );
 };
