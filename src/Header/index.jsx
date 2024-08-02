@@ -3,7 +3,7 @@ import { HeaderNav } from "../HeaderNav";
 import styles from "./index.module.scss";
 import React from "react";
 
-export const Head = ({ toggleSidebar }) => {
+export const Header = ({ toggleSidebar }) => {
   return (
     <>
       <div className={styles.header}>

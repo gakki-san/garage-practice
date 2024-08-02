@@ -1,4 +1,4 @@
-import { Head } from "../Head";
+import { Header } from "../Header";
 import { Overview } from "../Overview";
 import { Sidebar } from "../Sidebar";
 import { Footer } from "../footer";
@@ -14,7 +14,7 @@ export const App = () => {
 
   return (
     <>
-      <Head
+      <Header
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         toggleSidebar={toggleSidebar}
