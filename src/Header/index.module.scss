@@ -2,18 +2,18 @@
   background-color: black;
 }
 
-.headerPadding {
+.sideSpacing {
   padding: 0 15px;
 }
 
-.headerTop {
+.container {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
 }
 
-.headerLeft,
-.headerRight {
+.headerBarStart,
+.headerBarEnd {
   display: flex;
   align-items: center;
 }
@@ -23,13 +23,13 @@
   padding: 0 5px;
 }
 
-.headerHamburger {
+.Hamburger {
   display: flex;
 }
 
-.headerLogoWrapper,
+.LogoWrapper,
 .headerName,
-.headerRightButtonWrapper,
+.buttonWrapper,
 .headerRightIconWrapper {
   margin-left: 15px;
 }
@@ -39,7 +39,7 @@
     display: none;
   }
 
-  .headerRightButtonWrapper:nth-child(n + 4) {
+  .buttonWrapper:nth-child(n + 4) {
     display: none;
   }
 }

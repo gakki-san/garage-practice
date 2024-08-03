@@ -6,35 +6,33 @@ import React from "react";
 export const Header = ({ toggleSidebar }) => {
   return (
     <header className={styles.header}>
-      <div className={styles.headerPadding}>
-        <div className={styles.headerTop}>
-          <div className={styles.headerLeft}>
+      <div className={styles.sideSpacing}>
+        <div className={styles.container}>
+          <div className={styles.headerBarStart}>
             <div className={styles.headerHamburgerWrapper}>
-              <button
-                onClick={toggleSidebar}
-                className={styles.headerHamburger}>
+              <button onClick={toggleSidebar} className={styles.Hamburger}>
                 <Hamburger />
               </button>
             </div>
-            <div className={styles.headerLogoWrapper}>
-              <button className={styles.headerLogo}>
+            <div className={styles.LogoWrapper}>
+              <button className={styles.Logo}>
                 <img src="" alt="" />◎
               </button>
             </div>
             <div className={styles.headerName}>trptz</div>
           </div>
-          <div className={styles.headerRight}>
+          <div className={styles.headerBarEnd}>
             <input
               type="text"
               placeholder="type to search"
               className={styles.headerInput}></input>
-            <div className={styles.headerRightButtonWrapper}>
+            <div className={styles.buttonWrapper}>
               <button className={styles.headerButton}>○</button>
             </div>
-            <div className={styles.headerRightButtonWrapper}>
+            <div className={styles.buttonWrapper}>
               <button className={styles.headerButton}>○</button>
             </div>
-            <div className={styles.headerRightButtonWrapper}>
+            <div className={styles.buttonWrapper}>
               <button className={styles.headerButton}>○</button>
             </div>
             <div className={styles.headerRightIconWrapper}>
