@@ -5,7 +5,7 @@ import React from "react";
 
 export const Header = ({ toggleSidebar }) => {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.headerPadding}>
         <div className={styles.headerTop}>
           <div className={styles.headerLeft}>
@@ -46,6 +46,6 @@ export const Header = ({ toggleSidebar }) => {
         </div>
         <HeaderNav />
       </div>
-    </div>
+    </header>
   );
 };
