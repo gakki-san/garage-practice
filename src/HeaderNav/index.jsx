@@ -7,18 +7,18 @@ export const HeaderNav = () => {
   const buttons = ["Overview", "Repositories", "Projects", "packages", "Stars"];
   return (
     <div className={styles.headerNav}>
-      <div className={styles.headerNavItems}>
+      <div className={styles.NavItems}>
         {buttons.map((text, index) => (
           <button
             key={index}
-            className={`${styles.headerNavButton} ${selectedHeaderButton === index ? styles.headerSelected : ""}`}
+            className={`${styles.navButton} ${selectedHeaderButton === index ? styles.headerSelected : ""}`}
             onClick={() => setSelectedHeaderButton(index)}>
-            <div className={styles.headerNavIcon}>◎</div>
-            <p className={styles.headerNavText}>{text}</p>
+            <div className={styles.navIcon}>◎</div>
+            <p className={styles.navText}>{text}</p>
           </button>
         ))}
       </div>
-      <div className={styles.headerNavSpButton}>x</div>
+      <div className={styles.NavSpButton}>x</div>
     </div>
   );
 };

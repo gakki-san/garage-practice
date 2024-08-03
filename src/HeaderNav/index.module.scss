@@ -2,17 +2,18 @@
   margin-top: 20px;
 }
 
-.headerNavItems {
+.NavItems {
   display: flex;
+  column-gap: 10px;
 }
 
-.headerNavButton {
+.navButton {
   display: flex;
   padding: 10px 5px;
   position: relative;
 }
 
-.headerNavButton.headerSelected::before {
+.navButton.headerSelected::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -22,15 +23,11 @@
   background-color: orange;
 }
 
-.headerNavButton:nth-child(n + 2) {
-  margin-left: 10px;
-}
-
-.headerNavText {
+.navText {
   display: inline-block;
   padding-left: 5px;
 }
-.headerNavSpButton {
+.NavSpButton {
   display: none;
 }
 
@@ -43,7 +40,7 @@
     display: none;
   }
 
-  .headerNavSpButton {
+  .NavSpButton {
     display: block;
   }
 }
