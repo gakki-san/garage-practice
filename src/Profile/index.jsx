@@ -1,4 +1,4 @@
-import { OverviewCard } from "../OverviewCard";
+import { ProfileCard } from "../ProfileCard";
 import styles from "./index.module.scss";
 
 export const Profile = () => {
@@ -32,10 +32,10 @@ export const Profile = () => {
               <p className={styles.profileRightText}>Customize your pins</p>
             </div>
             <div className={styles.profileRightCards}>
-              <OverviewCard />
-              <OverviewCard />
-              <OverviewCard />
-              <OverviewCard />
+              <ProfileCard />
+              <ProfileCard />
+              <ProfileCard />
+              <ProfileCard />
             </div>
           </div>
         </div>
