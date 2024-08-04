@@ -2,12 +2,12 @@
   background-color: rgb(29, 29, 34);
 }
 
-.profilePadding {
+.sideSpacing {
   padding: 0 20px;
   padding-top: 20px;
 }
 
-.profileImageWrapper {
+.imageWrapper {
   width: 100%;
   border-radius: 50%;
   position: relative;
@@ -15,14 +15,14 @@
   justify-content: center;
 }
 
-.profileImage {
+.image {
   max-width: 400px;
   border-radius: 50%;
   width: 100%;
   height: auto;
 }
 
-.profileImageWrapper::before {
+.imageWrapper::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -39,16 +39,16 @@
   gap: 20px;
 }
 
-.profileLeftName {
+.accountName {
   font-size: 24px;
   font-weight: bold;
 }
-.profileLeftNickName {
+.nickName {
   font-size: 20px;
   color: rgb(130, 129, 129);
 }
 
-.profileLeftEditButton {
+.editButton {
   width: 100%;
   padding: 5px 20px;
   background-color: rgb(83, 83, 83);
@@ -56,16 +56,16 @@
   border-radius: 3px;
 }
 
-.profileRightTitleWrapper {
+.titleWrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.profileRightText {
+.text {
   color: blue;
 }
 
-.profileRightCards {
+.repositoriesCard {
   display: grid;
   gap: 15px;
   grid-template-columns: 1fr 1fr;
@@ -73,29 +73,29 @@
 }
 
 @media (max-width: 600px) {
-  .profileImageWrapper {
+  .imageWrapper {
     width: auto;
   }
-  .profileRight {
+  .repositoriesWrapper {
     display: none;
   }
   .profileContainer {
     display: block;
   }
-  .profileSpLeft {
+  .spAccount {
     display: flex;
     align-items: center;
   }
-  .profileImageWrapper::before {
+  .imageWrapper::before {
     display: none;
   }
-  .profileImage {
+  .image {
     max-width: 150px;
   }
-  .profileLeftNameWrapper {
+  .nameWrapper {
     margin-left: 20px;
   }
-  .profileLeftEditButtonWrapper {
+  .buttonWrapper {
     margin-top: 30px;
   }
 }
