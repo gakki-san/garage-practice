@@ -11,6 +11,7 @@
 
 .navButton {
   display: flex;
+
   padding: 10px 5px;
   position: relative;
 }
@@ -33,7 +34,7 @@
   display: none;
 }
 
-@media (max-width: $responsive) {
+@include responsive {
   .headerNav {
     display: flex;
     justify-content: space-between;

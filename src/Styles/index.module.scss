@@ -1,1 +1,5 @@
-$responsive: 600px;
+@mixin responsive {
+  @media (max-width: 600px) {
+    @content;
+  }
+}

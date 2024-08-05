@@ -35,7 +35,7 @@
   margin-left: 15px;
 }
 
-@media (max-width: $responsive) {
+@include responsive {
   .headerInput {
     display: none;
   }
