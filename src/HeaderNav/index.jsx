@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 const buttons = ["Overview", "Repositories", "Projects", "packages", "Stars"];
 
 export const HeaderNav = () => {
-  const [selectedHeaderButton, setSelectedHeaderButton] = useState(0);
+  const [selectedHeaderButtonIndex, setSelectedHeaderButtonIndex] = useState(0);
 
   return (
     <div className={styles.headerNav}>
@@ -11,8 +11,8 @@ export const HeaderNav = () => {
         {buttons.map((text, index) => (
           <button
             key={index}
-            className={`${styles.navButton} ${selectedHeaderButton === index ? styles.headerSelected : ""}`}
-            onClick={() => setSelectedHeaderButton(index)}>
+            className={`${styles.navButton} ${selectedHeaderButtonIndex === index ? styles.headerSelected : ""}`}
+            onClick={() => setSelectedHeaderButtonIndex(index)}>
             <div className={styles.navIcon}>◎</div>
             <p className={styles.navText}>{text}</p>
           </button>
