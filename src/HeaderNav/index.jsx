@@ -20,7 +20,7 @@ export const HeaderNav = () => {
             className={`${styles.navButton} ${selectedHeaderButtonIndex === index && styles.headerSelected}`}
             onClick={() => setSelectedHeaderButtonIndex(index)}>
             <div className={styles.navIcon}>◎</div>
-            <p className={styles.navText}>{button.text}</p>
+            <div className={styles.navText}>{button.text}</div>
           </button>
         ))}
       </div>
