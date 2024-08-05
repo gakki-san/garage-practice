@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styles from "./index.module.scss";
+const buttons = ["Overview", "Repositories", "Projects", "packages", "Stars"];
 
 export const HeaderNav = () => {
   const [selectedHeaderButton, setSelectedHeaderButton] = useState(0);
 
-  const buttons = ["Overview", "Repositories", "Projects", "packages", "Stars"];
   return (
     <div className={styles.headerNav}>
       <div className={styles.NavItems}>
