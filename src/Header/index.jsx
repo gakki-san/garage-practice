@@ -15,7 +15,7 @@ export const Header = ({ toggleSidebar }) => {
               </button>
             </div>
             <div className={styles.LogoWrapper}>
-              <button className={styles.Logo}>
+              <button className={styles.logo}>
                 <img src="" alt="" />◎
               </button>
             </div>
