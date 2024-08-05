@@ -1,3 +1,5 @@
+@import "../Styles/index.module.scss";
+
 .footer {
   margin-top: 40px;
 }
@@ -20,7 +22,7 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: $responsive) {
   .logo,
   .title {
     display: none;

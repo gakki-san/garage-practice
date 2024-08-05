@@ -1,3 +1,5 @@
+@import "../Styles/index.module.scss";
+
 .headerNav {
   margin-top: 20px;
 }
@@ -31,7 +33,7 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: $responsive) {
   .headerNav {
     display: flex;
     justify-content: space-between;
