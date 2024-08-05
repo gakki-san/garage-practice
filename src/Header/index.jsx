@@ -27,7 +27,10 @@ export const Header = ({ toggleSidebar }) => {
               placeholder="type to search"
               className={styles.headerInput}></input>
             <div className={styles.buttonWrapper}>
-              <button className={styles.headerButton}>○</button>
+              <button
+                className={`${styles.headerButton} ${styles.SpButtonNone}`}>
+                ○
+              </button>
             </div>
             <div className={styles.buttonWrapper}>
               <button className={styles.headerButton}>○</button>
