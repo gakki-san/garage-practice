@@ -3,11 +3,11 @@ import React from "react";
 
 const sidebarItems = [
   { id: 1, text: "◎ Home" },
-  { id: 1, text: "◎ issues" },
-  { id: 1, text: "◎ Pull request" },
-  { id: 1, text: "◎ Projects" },
-  { id: 1, text: "◎ Discussions" },
-  { id: 1, text: "◎ Codespaces" },
+  { id: 2, text: "◎ issues" },
+  { id: 3, text: "◎ Pull request" },
+  { id: 4, text: "◎ Projects" },
+  { id: 5, text: "◎ Discussions" },
+  { id: 6, text: "◎ Codespaces" },
 ];
 
 export const Sidebar = ({ isMenuOpen, toggleSidebar }) => {
