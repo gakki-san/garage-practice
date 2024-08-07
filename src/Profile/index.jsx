@@ -1,6 +1,8 @@
 import { ProfileCard } from "../ProfileCard";
 import styles from "./index.module.scss";
 
+const name = "trptz";
+
 export const Profile = () => {
   return (
     <div className={styles.profile}>
@@ -16,8 +18,8 @@ export const Profile = () => {
                 />
               </div>
               <div className={styles.nameWrapper}>
-                <p className={styles.accountName}>trptz</p>
-                <p className={styles.nickName}>trptz</p>
+                <p className={styles.accountName}>{name}</p>
+                <p className={styles.nickName}>{name}</p>
               </div>
             </div>
             <div className={styles.buttonWrapper}>
