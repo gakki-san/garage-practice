@@ -12,7 +12,7 @@ export const Profile = () => {
                 <img
                   className={styles.image}
                   src="https://avatars.githubusercontent.com/u/40844605?v=4"
-                  alt="ごんたの写真"
+                  alt="ごんたという名の柴犬"
                 />
               </div>
               <div className={styles.nameWrapper}>
