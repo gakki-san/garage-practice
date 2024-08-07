@@ -1,6 +1,15 @@
 import styles from "./index.module.scss";
 import React from "react";
 
+const sidebarItems = [
+  { id: 1, text: "◎ Home" },
+  { id: 1, text: "◎ issues" },
+  { id: 1, text: "◎ Pull request" },
+  { id: 1, text: "◎ Projects" },
+  { id: 1, text: "◎ Discussions" },
+  { id: 1, text: "◎ Codespaces" },
+];
+
 export const Sidebar = ({ isMenuOpen, toggleSidebar }) => {
   return (
     <div className={`${styles.sidebar} ${isMenuOpen ? styles.open : ""}`}>
@@ -14,24 +23,11 @@ export const Sidebar = ({ isMenuOpen, toggleSidebar }) => {
           </button>
         </div>
         <ul className={styles.sidebarListItems}>
-          <li className={styles.sidebarList}>
-            <a href="#">◎ Home</a>
-          </li>
-          <li className={styles.sidebarList}>
-            <a href="#">◎ issues</a>
-          </li>
-          <li className={styles.sidebarList}>
-            <a href="#">◎ Pull request</a>
-          </li>
-          <li className={styles.sidebarList}>
-            <a href="#">◎ Projects</a>
-          </li>
-          <li className={styles.sidebarList}>
-            <a href="#">◎ Discussions</a>
-          </li>
-          <li className={styles.sidebarList}>
-            <a href="#">◎ Codespaces</a>
-          </li>
+          {sidebarItems.map((sidebarItem) => (
+            <li className={styles.sidebarList} key={sidebarItem.id}>
+              <a href="#">{sidebarItem.text}</a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
