@@ -11,9 +11,18 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5px;
+  column-gap: 5px;
 }
 
+.linkItemList {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  flex-wrap: wrap;
+}
+li {
+  list-style: none;
+}
 .linkItem a {
   font-size: 12px;
 }
