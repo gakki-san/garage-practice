@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.navButton.headerSelected::before {
+.headerSelected::before {
   content: "";
   position: absolute;
   bottom: 0;
