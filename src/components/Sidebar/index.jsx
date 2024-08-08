@@ -22,9 +22,9 @@ export const Sidebar = ({ isMenuOpen, toggleSidebar }) => {
             x
           </button>
         </div>
-        <ul className={styles.sidebarListItems}>
+        <ul className={styles.linkLists}>
           {sidebarItems.map((sidebarItem) => (
-            <li className={styles.sidebarList} key={sidebarItem.id}>
+            <li className={styles.linkList} key={sidebarItem.id}>
               <a href="#">{sidebarItem.text}</a>
             </li>
           ))}
