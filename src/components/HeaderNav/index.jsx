@@ -13,7 +13,7 @@ export const HeaderNav = () => {
 
   return (
     <div className={styles.headerNav}>
-      <div className={styles.NavItems}>
+      <div className={styles.navItems}>
         {buttons.map((button, index) => (
           <button
             key={button.id}
@@ -24,7 +24,7 @@ export const HeaderNav = () => {
           </button>
         ))}
       </div>
-      <div className={styles.NavSpButton}>x</div>
+      <div className={styles.navSpButton}>x</div>
     </div>
   );
 };
