@@ -1,6 +1,6 @@
 import styles from "./index.module.scss";
 
-const linkLists = [
+const linkList = [
   { id: 1, text: "Term" },
   { id: 2, text: "Privacy" },
   { id: 3, text: "Security" },
@@ -20,7 +20,7 @@ export const Footer = () => {
           </div>
           <div className={styles.title}>2024 Github,inc</div>
           <ul className={styles.linkWrapper}>
-            {linkLists.map((linkList) => (
+            {linkList.map((linkList) => (
               <li className={styles.linkList} key={linkList.id}>
                 <a href="#">{linkList.text}</a>
               </li>
