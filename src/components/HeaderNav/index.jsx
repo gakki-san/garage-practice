@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./index.module.scss";
-const buttons = [
+const buttonLabel = [
   { id: 1, text: "Overview" },
   { id: 2, text: "Repositories" },
   { id: 3, text: "Projects" },
@@ -14,7 +14,7 @@ export const HeaderNav = () => {
   return (
     <div className={styles.headerNav}>
       <div className={styles.navItems}>
-        {buttons.map((button, index) => (
+        {buttonLabel.map((button, index) => (
           <button
             key={button.id}
             className={`${styles.navButton} ${selectedButtonIndex === index && styles.headerSelected}`}
