@@ -29,13 +29,6 @@
   display: flex;
 }
 
-// .LogoWrapper,
-// .headerName,
-// .buttonWrapper,
-// .headerRightIconWrapper {
-//   margin-left: 15px;
-// }
-
 @include responsive {
   .headerInput {
     display: none;
