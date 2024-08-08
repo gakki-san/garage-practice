@@ -19,7 +19,7 @@ export const Footer = () => {
             <img src="" alt="" />◎
           </div>
           <div className={styles.title}>2024 Github,inc</div>
-          <ul className={styles.linkItemList}>
+          <ul className={styles.linkWrapper}>
             {linkItems.map((linkItem) => (
               <li className={styles.linkItem} key={linkItem.id}>
                 <a href="#">{linkItem.text}</a>
