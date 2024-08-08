@@ -9,7 +9,7 @@ const buttons = [
 ];
 
 export const HeaderNav = () => {
-  const [selectedHeaderButtonIndex, setSelectedHeaderButtonIndex] = useState(0);
+  const [selectedButtonIndex, setSelectedButtonIndex] = useState(0);
 
   return (
     <div className={styles.headerNav}>
@@ -17,8 +17,8 @@ export const HeaderNav = () => {
         {buttons.map((button, index) => (
           <button
             key={button.id}
-            className={`${styles.navButton} ${selectedHeaderButtonIndex === index && styles.headerSelected}`}
-            onClick={() => setSelectedHeaderButtonIndex(index)}>
+            className={`${styles.navButton} ${selectedButtonIndex === index && styles.headerSelected}`}
+            onClick={() => setSelectedButtonIndex(index)}>
             <div className={styles.navIcon}>◎</div>
             <div className={styles.navText}>{button.text}</div>
           </button>
