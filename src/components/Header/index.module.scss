@@ -17,6 +17,7 @@
 .headerBarEnd {
   display: flex;
   align-items: center;
+  column-gap: 15px;
 }
 
 .headerInput {
@@ -28,12 +29,12 @@
   display: flex;
 }
 
-.LogoWrapper,
-.headerName,
-.buttonWrapper,
-.headerRightIconWrapper {
-  margin-left: 15px;
-}
+// .LogoWrapper,
+// .headerName,
+// .buttonWrapper,
+// .headerRightIconWrapper {
+//   margin-left: 15px;
+// }
 
 @include responsive {
   .headerInput {
