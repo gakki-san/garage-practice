@@ -28,7 +28,7 @@ export const Header = ({ toggleSidebar }) => {
               className={styles.headerInput}></input>
             <div className={styles.buttonWrapper}>
               <button
-                className={`${styles.headerButton} ${styles.SpButtonNone}`}>
+                className={`${styles.headerButton} ${styles.spButtonNone}`}>
                 ○
               </button>
             </div>
