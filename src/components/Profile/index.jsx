@@ -1,4 +1,4 @@
-import { ProfileCard } from "../ProfileCard";
+import { RepositoriesCard } from "../RepositoriesCard";
 import styles from "./index.module.scss";
 
 const name = "trptz";
@@ -32,10 +32,10 @@ export const Profile = () => {
               <p className={styles.text}>Customize your pins</p>
             </div>
             <div className={styles.repositoriesCard}>
-              <ProfileCard />
-              <ProfileCard />
-              <ProfileCard />
-              <ProfileCard />
+              <RepositoriesCard />
+              <RepositoriesCard />
+              <RepositoriesCard />
+              <RepositoriesCard />
             </div>
           </div>
         </div>
