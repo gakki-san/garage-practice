@@ -1,7 +1,7 @@
 import { RepositoriesCard } from "../RepositoriesCard";
 import styles from "./index.module.scss";
 
-const name = "trptz";
+const useName = "trptz";
 
 export const Profile = () => {
   return (
@@ -18,8 +18,8 @@ export const Profile = () => {
                 />
               </div>
               <div className={styles.nameWrapper}>
-                <p className={styles.accountName}>{name}</p>
-                <p className={styles.nickName}>{name}</p>
+                <p className={styles.accountName}>{useName}</p>
+                <p className={styles.nickName}>{useName}</p>
               </div>
             </div>
             <div className={styles.buttonWrapper}>
