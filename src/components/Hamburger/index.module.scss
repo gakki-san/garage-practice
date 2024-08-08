@@ -1,0 +1,14 @@
+.hamburger {
+  display: flex;
+  row-gap: 5px;
+  flex-direction: column;
+  border: 1px solid rgba($color: white, $alpha: 0.5);
+  padding: 6px;
+  border-radius: 2px;
+}
+
+.hamburgerLine {
+  width: 15px;
+  height: 1px;
+  background-color: white;
+}

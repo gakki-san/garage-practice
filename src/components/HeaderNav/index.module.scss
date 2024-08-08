@@ -1,0 +1,49 @@
+@import "../../styles/mixin.module.scss";
+
+.headerNav {
+  margin-top: 20px;
+}
+
+.navItems {
+  display: flex;
+  column-gap: 10px;
+}
+
+.navButton {
+  display: flex;
+
+  padding: 10px 5px;
+  position: relative;
+}
+
+.headerSelected::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: orange;
+}
+
+.navText {
+  display: inline-block;
+  padding-left: 5px;
+}
+.navSpButton {
+  display: none;
+}
+
+@include responsive {
+  .headerNav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navButton:nth-child(n + 3) {
+    display: none;
+  }
+
+  .navSpButton {
+    display: block;
+  }
+}

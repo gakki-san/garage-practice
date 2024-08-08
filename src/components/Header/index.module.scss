@@ -1,0 +1,40 @@
+@import "../../styles/mixin.module.scss";
+.header {
+  background-color: black;
+}
+
+.sideSpacing {
+  padding: 0 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.headerBarStart,
+.headerBarEnd {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.headerInput {
+  border: solid 1px rgba($color: white, $alpha: 0.5);
+  padding: 0 5px;
+}
+
+.Hamburger {
+  display: flex;
+}
+
+@include responsive {
+  .headerInput {
+    display: none;
+  }
+
+  .spButtonNone {
+    display: none;
+  }
+}

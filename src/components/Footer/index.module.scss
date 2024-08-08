@@ -1,0 +1,44 @@
+@import "../../styles/mixin.module.scss";
+
+.footer {
+  margin-top: 40px;
+}
+
+.sideSpacing {
+  padding: 0 15px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+
+.linkWrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  flex-wrap: wrap;
+}
+.linkList a {
+  font-size: 12px;
+}
+
+.footerSpItem {
+  display: none;
+}
+
+@include responsive {
+  .logo,
+  .title {
+    display: none;
+  }
+
+  .footerSpItem {
+    display: block;
+  }
+
+  .footerSpItem {
+    text-align: center;
+  }
+}

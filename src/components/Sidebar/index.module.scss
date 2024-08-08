@@ -1,0 +1,32 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgb(29, 29, 34);
+  border-radius: 0 8px 8px 0;
+  border: solid 0.2px rgba($color: white, $alpha: 0.2);
+  transition: left 0.3s ease;
+}
+
+.linkList a {
+  display: block;
+  padding: 7px 20px;
+}
+
+.open {
+  left: 0;
+}
+
+.sidebarHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.linkLists {
+  margin-top: 20px;
+}
